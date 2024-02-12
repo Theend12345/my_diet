@@ -3,7 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/drawable/button_background.xml" value="0.1845" />
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/drawable/left_side_background.xml" value="0.136" />
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/drawable/list_item_background.xml" value="0.1845" />
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/drawable/right_side_background.xml" value="0.138" />
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/drawable/search_background.xml" value="0.137" />
         <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/layout/activity_main.xml" value="0.16302083333333334" />
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/layout/fragment_fitness.xml" value="0.2" />
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/layout/fragment_greeting.xml" value="0.176" />
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/layout/fragment_item_list.xml" value="0.23958333333333334" />
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/layout/fragment_list.xml" value="0.25364583333333335" />
+        <entry key="..\:/android/ANDROID_PRJ/MyDiet/app/src/main/res/layout/list_item.xml" value="0.2526041666666667" />
       </map>
     </option>
   </component>

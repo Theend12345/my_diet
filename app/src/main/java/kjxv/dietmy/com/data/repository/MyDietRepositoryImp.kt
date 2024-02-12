@@ -57,6 +57,13 @@ class MyDietRepositoryImp(database: MyDietDatabase) : MyDietRepository {
             }
         }
 
+    override fun getExerciseByFavorite(favorite: Boolean): Flow<List<ExerciseModel>> =
+        dao.getExerciseByFavorite(favorite).map { list ->
+            list.map { entity ->
+                entity.toModel()
+            }
+        }
+
     override fun updateExercise(exerciseModel: ExerciseModel) {
         dao.updateExercise(exerciseModel.toEntity())
     }

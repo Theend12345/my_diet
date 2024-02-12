@@ -25,4 +25,6 @@ interface MyDietDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun updateExercise(exerciseEntity: ExerciseEntity)
+    @Query("SELECT * FROM exercise WHERE favorite=:favorite")
+    fun getExerciseByFavorite(favorite: Boolean): Flow<List<ExerciseEntity>>
 }

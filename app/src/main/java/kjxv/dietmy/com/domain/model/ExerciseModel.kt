@@ -8,7 +8,7 @@ data class ExerciseModel(
     val img: String,
     val type: String,
     var video: String? = null,
-    val favorite: Boolean,
+    var favorite: Boolean,
 ): Searchable {
     override fun searchField() = title.trim()
 }

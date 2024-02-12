@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">MyDiet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="greeting_title">Персональный тренер в кармане</string>
+    <string name="greeting_description">Не знаете как начать вести здоровый образ жизни? Выберете путь, который будет правильным для вас!</string>
+    <string name="start">Начать</string>
+    <string name="search">поиск</string>
+    <string name="home_fitness_description">Физическая подготовка</string>
+    <string name="fitness">Фитнес</string>
+    <string name="nutrition">Питание</string>
+    <string name="diet">Диеты</string>
+    <string name="appearance">Внешность</string>
+    <string name="personal_care">Уход за собой</string>
+    <string name="beauty">Красота</string>
+    <string name="exercise">Упражнения</string>
+    <string name="Yga">Йога</string>
+    <string name="cardio">Кардио-\n тренировки</string>
+    <string name="favourite">Избранное</string>
 </resources>

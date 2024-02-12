@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="home_description_text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="content_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="home_category_description">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:textColor">@color/light</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
