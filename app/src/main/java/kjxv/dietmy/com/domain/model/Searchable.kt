@@ -1,5 +1,7 @@
 package kjxv.dietmy.com.domain.model
 
-interface Searchable {
+import java.io.Serializable
+
+interface Searchable: Serializable {
     fun searchField(): String
 }
