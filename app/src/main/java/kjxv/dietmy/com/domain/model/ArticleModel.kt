@@ -5,6 +5,7 @@ data class ArticleModel(
     val content: String,
     val img: String,
     val type: String
-): Searchable {
+) : Searchable {
     override fun searchField() = title.trim()
+    override fun getImage() = img
 }

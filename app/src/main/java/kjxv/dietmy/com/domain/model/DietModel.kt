@@ -8,4 +8,5 @@ data class DietModel(
     val type: String
 ): Searchable {
     override fun searchField() = title.trim()
+    override fun getImage() = img
 }

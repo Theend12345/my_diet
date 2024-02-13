@@ -18,6 +18,7 @@ import javax.inject.Inject
 @HiltViewModel
 class ListViewModel @Inject constructor(
     private val getAllDataByTypeUseCase: GetAllDataByTypeUseCase,
+    private val getAllDataUseCase: GetAllDataUseCase,
     private val getFavoriteExerciseUseCase: GetFavoriteExerciseUseCase
 ) : ViewModel() {
     private var _dataState = MutableStateFlow<ViewState<List<Searchable>>>(ViewState.Loading)
@@ -27,6 +28,14 @@ class ListViewModel @Inject constructor(
     fun loadData(dataType: DataType, type: String) {
         viewModelScope.launch {
             getAllDataByTypeUseCase(dataType, type).collect {
+                setState(it)
+            }
+        }
+    }
+
+    fun loadALLDiet() {
+        viewModelScope.launch {
+            getAllDataUseCase(DataType.DIET).collect {
                 setState(it)
             }
         }

@@ -4,4 +4,5 @@ import java.io.Serializable
 
 interface Searchable: Serializable {
     fun searchField(): String
+    fun getImage(): String
 }

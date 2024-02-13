@@ -6,15 +6,17 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kjxv.dietmy.com.domain.model.Searchable
 import kjxv.dietmy.com.domain.usecase.SearchUseCase
 import kjxv.dietmy.com.presentation.view.state.ViewState
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeViewModel @Inject constructor(
-    private val searchUseCase: SearchUseCase,
+class SearchViewModel @Inject constructor(
+    private val searchUseCase: SearchUseCase
 ) : ViewModel() {
-
     private var _searchState = MutableStateFlow<ViewState<List<Searchable>>>(ViewState.Loading)
     val searchState: StateFlow<ViewState<List<Searchable>>>
         get() = _searchState.asStateFlow()
