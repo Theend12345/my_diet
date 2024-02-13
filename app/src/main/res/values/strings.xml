@@ -15,6 +15,16 @@
     <string name="beauty">Красота</string>
     <string name="exercise">Упражнения</string>
     <string name="Yga">Йога</string>
+    <string name="content">Детали</string>
     <string name="cardio">Кардио-\n тренировки</string>
     <string name="favourite">Избранное</string>
+    <string name="search_result">Результаты поиска</string>
+    <string name="home">Главная</string>
+
+    <string-array name="diet_types">
+        <item>Все</item>
+        <item>Веганская</item>
+        <item>безглютеновая</item>
+        <item>Низкоуглеводная</item>
+    </string-array>
 </resources>

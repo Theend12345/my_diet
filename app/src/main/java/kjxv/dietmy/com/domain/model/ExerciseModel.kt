@@ -11,4 +11,5 @@ data class ExerciseModel(
     var favorite: Boolean,
 ): Searchable {
     override fun searchField() = title.trim()
+    override fun getImage() = img
 }

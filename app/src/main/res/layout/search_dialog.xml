@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.view.ListFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <Spinner
-            android:id="@+id/filter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_margin="5dp"
-            android:entries="@array/diet_types"
-            android:visibility="gone" />
+        <TextView
+            android:text="@string/search_result"
+            android:layout_margin="10dp"
+            style="@style/home_description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler"
@@ -25,7 +22,6 @@
             android:layout_height="match_parent"
             tools:listitem="@layout/list_item" />
     </LinearLayout>
-
 
     <ProgressBar
         android:id="@+id/progress"
@@ -35,3 +31,4 @@
         android:indeterminateTint="@color/orange_200" />
 
 </FrameLayout>
+

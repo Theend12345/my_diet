@@ -8,18 +8,32 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="kjxv.dietmy.com.presentation.view.HomeFragment"
-        android:label="fragment_home"
+        android:label="@string/home"
         app:popUpToInclusive = "true"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_fitnessFragment"
             app:destination="@id/fitnessFragment"
-            app:popUpTo="@id/homeFragment" />
+            app:popUpTo="@id/homeFragment"
+            app:popUpToSaveState="true"
+            app:restoreState="true"/>
+        <action
+            android:id="@+id/action_homeFragment_to_listFragment"
+            app:destination="@id/listFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToSaveState="true"
+            app:restoreState="true"/>
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToSaveState="true"
+            app:restoreState="true"/>
     </fragment>
     <fragment
         android:id="@+id/fitnessFragment"
         android:name="kjxv.dietmy.com.presentation.view.FitnessFragment"
-        android:label="fragment_fitness"
+        android:label="@string/fitness"
         tools:layout="@layout/fragment_fitness" >
         <action
             android:id="@+id/action_fitnessFragment_to_listFragment"
@@ -37,10 +51,18 @@
     <fragment
         android:id="@+id/itemListFragment"
         android:name="kjxv.dietmy.com.presentation.view.ItemListFragment"
-        android:label="fragment_item_list"
+        android:label="@string/content"
         tools:layout="@layout/fragment_item_list">
         <argument
             android:name="data"
             app:argType="kjxv.dietmy.com.domain.model.Searchable" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="kjxv.dietmy.com.presentation.view.SearchFragment"
+        android:label="@string/search" >
+        <action
+            android:id="@+id/action_searchFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
     </fragment>
 </navigation>
