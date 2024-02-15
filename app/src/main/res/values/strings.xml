@@ -24,7 +24,7 @@
     <string-array name="diet_types">
         <item>Все</item>
         <item>Веганская</item>
-        <item>безглютеновая</item>
+        <item>Безглютеновая</item>
         <item>Низкоуглеводная</item>
     </string-array>
 </resources>

@@ -10,7 +10,6 @@ import kjxv.dietmy.com.domain.model.Searchable
 class ListAdapter(
     private val data: List<Searchable>
 ) : RecyclerView.Adapter<ItemListViewHolder>() {
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemListViewHolder {
         val binding: ListItemBinding =
             ListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
