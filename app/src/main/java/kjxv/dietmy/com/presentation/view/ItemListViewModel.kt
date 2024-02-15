@@ -6,7 +6,6 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kjxv.dietmy.com.domain.model.ExerciseModel
 import kjxv.dietmy.com.domain.model.Searchable
 import kjxv.dietmy.com.domain.usecase.AddExerciseToFavoriteUseCase
-import kjxv.dietmy.com.domain.usecase.GetFavoriteExerciseUseCase
 import kjxv.dietmy.com.presentation.view.state.ViewState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow

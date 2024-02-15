@@ -27,13 +27,10 @@ class HomeFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         with(binding) {
             search.setOnEditorActionListener { _, id, _ ->
                 if (id == EditorInfo.IME_ACTION_DONE) {
-                    val bundle = Bundle()
-                    bundle.putString(SEARCH_FIELD, search.text.toString())
-                    findNavController().navigate(R.id.action_homeFragment_to_searchFragment, bundle)
+                    searchNavigate(search.text.toString())
                 }
                 false
             }
@@ -45,12 +42,7 @@ class HomeFragment : Fragment() {
                     val bounds = search.compoundDrawables[drawableLeft].bounds
                     val x = event.rawX.toInt()
                     if (x >= bounds.left && x <= bounds.right + padding) {
-                        val bundle = Bundle()
-                        bundle.putString(SEARCH_FIELD, search.text.toString())
-                        findNavController().navigate(
-                            R.id.action_homeFragment_to_searchFragment,
-                            bundle
-                        )
+                        searchNavigate(search.text.toString())
                         return@setOnTouchListener true
                     }
                 }
@@ -66,7 +58,6 @@ class HomeFragment : Fragment() {
             beauty.setOnClickListener {
                 categoryNavigateBundle(ArticleType.BEAUTY.name.lowercase(), DataType.ARTICLE)
             }
-
             personalCare.setOnClickListener {
                 categoryNavigateBundle(ArticleType.SELF.name.lowercase(), DataType.ARTICLE)
             }
@@ -85,6 +76,15 @@ class HomeFragment : Fragment() {
         bundle.putString(ACTION_TYPE, string)
         bundle.putSerializable(DATA_TYPE, dataType)
         findNavController().navigate(R.id.action_homeFragment_to_listFragment, bundle)
+    }
+
+    private fun searchNavigate(inputString: String){
+        val bundle = Bundle()
+        bundle.putString(SEARCH_FIELD, inputString)
+        findNavController().navigate(
+            R.id.action_homeFragment_to_searchFragment,
+            bundle
+        )
     }
 
 }

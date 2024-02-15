@@ -7,8 +7,6 @@ interface MyDietRepository {
     fun getAllDiet(): Flow<List<DietModel>>
     fun getAllArticle(): Flow<List<ArticleModel>>
     fun getAllExercise(): Flow<List<ExerciseModel>>
-
-
     fun getDietByType(type: String): Flow<List<DietModel>>
     fun getArticleByType(type: String): Flow<List<ArticleModel>>
     fun getExerciseByType(type: String): Flow<List<ExerciseModel>>
